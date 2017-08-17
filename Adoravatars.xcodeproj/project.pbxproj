@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D69C91F1F29206700C26D81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D69C91E1F29206700C26D81 /* main.m */; };
+		5D69C9221F29206700C26D81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D69C9211F29206700C26D81 /* AppDelegate.m */; };
+		5D69C92D1F29206700C26D81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D69C92C1F29206700C26D81 /* Assets.xcassets */; };
+		5D69C9301F29206700C26D81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D69C92E1F29206700C26D81 /* LaunchScreen.storyboard */; };
+		5D69C9911F2B272400C26D81 /* AvatarDownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D69C9891F2B272400C26D81 /* AvatarDownloadModel.m */; };
+		5DB379291F3B060000EBEA95 /* AvatarsListInteractorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB379281F3B060000EBEA95 /* AvatarsListInteractorSpec.m */; };
+		67BC4D2E4729A0D13A7EBDAB /* libPods-Adoravatars.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A11481FB04F8115E16B90A42 /* libPods-Adoravatars.a */; };
+		BC595028B5420B658F294A66 /* UIColor+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BC595A7718DCBD5620C850FA /* UIColor+Utilities.m */; };
+		BC59534DCBBB9BC57E42E762 /* AvatarsListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = BC595A3E230D5BEF4A352AB1 /* AvatarsListInteractor.m */; };
+		BC595374D76E0032A867456B /* NetworkScreenPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5953CA80F1B0D89A6812E1 /* NetworkScreenPresenter.m */; };
+		BC5953EC7BF68FB8D64E1283 /* AvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5953E1BE3C12AFD9C21A02 /* AvatarCell.xib */; };
+		BC5955754A7863D4ADCED77F /* NetworkScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5950DF52155F56E903AD4C /* NetworkScreenViewController.m */; };
+		BC5955E79B6311ED65628122 /* AvatarsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5957D0B068647A6B41C855 /* AvatarsListViewController.m */; };
+		BC59570D8A1390495CEEE951 /* DownloadStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC59578E91041F3342952B82 /* DownloadStatusCell.m */; };
+		BC5958B63349E3B76CC7FB75 /* AvatarDownloadStatusViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC595AE020F136E5C1F07607 /* AvatarDownloadStatusViewModel.m */; };
+		BC59591B8FF79324E9A8FF83 /* AvatarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5950ECBEB3CC3D7BA43998 /* AvatarCell.m */; };
+		BC5959C7AA706BEBE4E8B4A6 /* AvatarsListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = BC595A3E230D5BEF4A352AB1 /* AvatarsListInteractor.m */; };
+		BC5959FBAB12BCC23EAA863D /* DownloadStatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC595FC73F05E5AEE09C70A8 /* DownloadStatusCell.xib */; };
+		BC595AA2B739CD6A2DF65679 /* AvatarsListRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5954B3C5F5BD52BB99FCCA /* AvatarsListRouter.m */; };
+		BC595CEEE7E17D6C6F24B443 /* AvatarsListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5955C6BA8B5E7AE18053B9 /* AvatarsListPresenter.m */; };
+		BC595D95560C7EE025E4330B /* AvatarDownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D69C9891F2B272400C26D81 /* AvatarDownloadModel.m */; };
+		BC595E902B23FB5417930162 /* AvatarsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5956C3945B960BDF6FCE7A /* AvatarsListViewController.xib */; };
+		BC595F230890B1DE5E7CAA4D /* NetworkScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5958E65781DDA5A3F7F0FE /* NetworkScreenViewController.xib */; };
+		F181562C13B9EB78D192F785 /* libPods-AdoravatarsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E60BAC3653F1468A743F438E /* libPods-AdoravatarsTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D69C9371F29206700C26D81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D69C9121F29206700C26D81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D69C9191F29206700C26D81;
+			remoteInfo = Adoravatars;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D69C91A1F29206700C26D81 /* Adoravatars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adoravatars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D69C91E1F29206700C26D81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D69C9201F29206700C26D81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5D69C9211F29206700C26D81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5D69C92C1F29206700C26D81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D69C92F1F29206700C26D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D69C9311F29206700C26D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D69C9361F29206700C26D81 /* AdoravatarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdoravatarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D69C93C1F29206700C26D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D69C9881F2B272400C26D81 /* AvatarDownloadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarDownloadModel.h; sourceTree = "<group>"; };
+		5D69C9891F2B272400C26D81 /* AvatarDownloadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarDownloadModel.m; sourceTree = "<group>"; };
+		5DB379281F3B060000EBEA95 /* AvatarsListInteractorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarsListInteractorSpec.m; sourceTree = "<group>"; };
+		9895B4A82D077B2D83205C41 /* Pods-AdoravatarsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdoravatarsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdoravatarsTests/Pods-AdoravatarsTests.release.xcconfig"; sourceTree = "<group>"; };
+		A11481FB04F8115E16B90A42 /* libPods-Adoravatars.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Adoravatars.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC59507CF120E18604014102 /* AvatarsListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarsListPresenter.h; sourceTree = "<group>"; };
+		BC5950DF52155F56E903AD4C /* NetworkScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkScreenViewController.m; sourceTree = "<group>"; };
+		BC5950ECBEB3CC3D7BA43998 /* AvatarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarCell.m; sourceTree = "<group>"; };
+		BC5951F30F44D7992A6AC0E1 /* AvatarDownloadStatusViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarDownloadStatusViewModel.h; sourceTree = "<group>"; };
+		BC5953CA80F1B0D89A6812E1 /* NetworkScreenPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkScreenPresenter.m; sourceTree = "<group>"; };
+		BC5953E1BE3C12AFD9C21A02 /* AvatarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarCell.xib; sourceTree = "<group>"; };
+		BC5953EF3A2B7DDC93DBF64F /* AvatarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarCell.h; sourceTree = "<group>"; };
+		BC5954B3C5F5BD52BB99FCCA /* AvatarsListRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarsListRouter.m; sourceTree = "<group>"; };
+		BC595519CCF05212D819D626 /* UIColor+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utilities.h"; sourceTree = "<group>"; };
+		BC5955C6BA8B5E7AE18053B9 /* AvatarsListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarsListPresenter.m; sourceTree = "<group>"; };
+		BC5956C3945B960BDF6FCE7A /* AvatarsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarsListViewController.xib; sourceTree = "<group>"; };
+		BC5956FB1D36C149ED025329 /* ConfigurableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurableItem.h; sourceTree = "<group>"; };
+		BC59578E91041F3342952B82 /* DownloadStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadStatusCell.m; sourceTree = "<group>"; };
+		BC5957D0B068647A6B41C855 /* AvatarsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarsListViewController.m; sourceTree = "<group>"; };
+		BC5957FE595946862DA5D626 /* DownloadStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadStatusCell.h; sourceTree = "<group>"; };
+		BC59581238757B15657EFC0F /* NetworkScreenProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkScreenProtocols.h; sourceTree = "<group>"; };
+		BC59585BF8F84A39F5624247 /* AvatarsListProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarsListProtocols.h; sourceTree = "<group>"; };
+		BC5958E65781DDA5A3F7F0FE /* NetworkScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkScreenViewController.xib; sourceTree = "<group>"; };
+		BC5958FE05ACFDA121346C51 /* AvatarsListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarsListInteractor.h; sourceTree = "<group>"; };
+		BC595918DD34F171112544D9 /* NetworkScreenPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkScreenPresenter.h; sourceTree = "<group>"; };
+		BC5959416E16CCD45F1C3F97 /* NetworkScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkScreenViewController.h; sourceTree = "<group>"; };
+		BC595A3E230D5BEF4A352AB1 /* AvatarsListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarsListInteractor.m; sourceTree = "<group>"; };
+		BC595A7718DCBD5620C850FA /* UIColor+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utilities.m"; sourceTree = "<group>"; };
+		BC595AE020F136E5C1F07607 /* AvatarDownloadStatusViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarDownloadStatusViewModel.m; sourceTree = "<group>"; };
+		BC595BDD8457A72E968D29D2 /* AvatarsListRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarsListRouter.h; sourceTree = "<group>"; };
+		BC595FC73F05E5AEE09C70A8 /* DownloadStatusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadStatusCell.xib; sourceTree = "<group>"; };
+		BC595FCC77C202BC17AC1CBC /* AvatarsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarsListViewController.h; sourceTree = "<group>"; };
+		E326AC28BCE4F63F24D5790E /* Pods-AdoravatarsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdoravatarsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdoravatarsTests/Pods-AdoravatarsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E60BAC3653F1468A743F438E /* libPods-AdoravatarsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AdoravatarsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C5F02DC5BC133A853F4A63 /* Pods-Adoravatars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adoravatars.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Adoravatars/Pods-Adoravatars.debug.xcconfig"; sourceTree = "<group>"; };
+		FCC73AC4EE8D0017F60ECF57 /* Pods-Adoravatars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adoravatars.release.xcconfig"; path = "Pods/Target Support Files/Pods-Adoravatars/Pods-Adoravatars.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D69C9171F29206700C26D81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BC4D2E4729A0D13A7EBDAB /* libPods-Adoravatars.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D69C9331F29206700C26D81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F181562C13B9EB78D192F785 /* libPods-AdoravatarsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44E3746ECE48C7D9659145EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A11481FB04F8115E16B90A42 /* libPods-Adoravatars.a */,
+				E60BAC3653F1468A743F438E /* libPods-AdoravatarsTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D69C9111F29206700C26D81 = {
+			isa = PBXGroup;
+			children = (
+				5D69C91C1F29206700C26D81 /* Adoravatars */,
+				5D69C9391F29206700C26D81 /* AdoravatarsTests */,
+				5D69C91B1F29206700C26D81 /* Products */,
+				714E7926DFA08A818DB792F7 /* Pods */,
+				44E3746ECE48C7D9659145EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5D69C91B1F29206700C26D81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D69C91A1F29206700C26D81 /* Adoravatars.app */,
+				5D69C9361F29206700C26D81 /* AdoravatarsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D69C91C1F29206700C26D81 /* Adoravatars */ = {
+			isa = PBXGroup;
+			children = (
+				5D69C9201F29206700C26D81 /* AppDelegate.h */,
+				5D69C9211F29206700C26D81 /* AppDelegate.m */,
+				5D69C9641F2A242C00C26D81 /* Avatars */,
+				5D69C92C1F29206700C26D81 /* Assets.xcassets */,
+				5D69C92E1F29206700C26D81 /* LaunchScreen.storyboard */,
+				5D69C9311F29206700C26D81 /* Info.plist */,
+				5D69C91D1F29206700C26D81 /* Supporting Files */,
+				BC595A305586097C5FA6649A /* Categories */,
+			);
+			path = Adoravatars;
+			sourceTree = "<group>";
+		};
+		5D69C91D1F29206700C26D81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D69C91E1F29206700C26D81 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D69C9391F29206700C26D81 /* AdoravatarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D69C93C1F29206700C26D81 /* Info.plist */,
+				5DB379281F3B060000EBEA95 /* AvatarsListInteractorSpec.m */,
+			);
+			path = AdoravatarsTests;
+			sourceTree = "<group>";
+		};
+		5D69C9641F2A242C00C26D81 /* Avatars */ = {
+			isa = PBXGroup;
+			children = (
+				5D69C9871F2B272400C26D81 /* Model */,
+				BC5956FB1D36C149ED025329 /* ConfigurableItem.h */,
+				BC595D7F00E43BE5CF94CD95 /* Screens */,
+				BC595076375F5057B0AAEB95 /* Interactor */,
+			);
+			path = Avatars;
+			sourceTree = "<group>";
+		};
+		5D69C9871F2B272400C26D81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D69C9881F2B272400C26D81 /* AvatarDownloadModel.h */,
+				5D69C9891F2B272400C26D81 /* AvatarDownloadModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		714E7926DFA08A818DB792F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6C5F02DC5BC133A853F4A63 /* Pods-Adoravatars.debug.xcconfig */,
+				FCC73AC4EE8D0017F60ECF57 /* Pods-Adoravatars.release.xcconfig */,
+				E326AC28BCE4F63F24D5790E /* Pods-AdoravatarsTests.debug.xcconfig */,
+				9895B4A82D077B2D83205C41 /* Pods-AdoravatarsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC595076375F5057B0AAEB95 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BC5958FE05ACFDA121346C51 /* AvatarsListInteractor.h */,
+				BC595A3E230D5BEF4A352AB1 /* AvatarsListInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BC5950F1D18D182C8E112AE8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BC59507CF120E18604014102 /* AvatarsListPresenter.h */,
+				BC5955C6BA8B5E7AE18053B9 /* AvatarsListPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BC59512E4562F44937E55364 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC595FCC77C202BC17AC1CBC /* AvatarsListViewController.h */,
+				BC5957D0B068647A6B41C855 /* AvatarsListViewController.m */,
+				BC5956C3945B960BDF6FCE7A /* AvatarsListViewController.xib */,
+				BC5958282288D0BA754B5CDB /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC5953EFD2433A985DA25E41 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BC5957FE595946862DA5D626 /* DownloadStatusCell.h */,
+				BC59578E91041F3342952B82 /* DownloadStatusCell.m */,
+				BC595FC73F05E5AEE09C70A8 /* DownloadStatusCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BC595424863BE2A7A529BAA5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC595AE020F136E5C1F07607 /* AvatarDownloadStatusViewModel.m */,
+				BC5951F30F44D7992A6AC0E1 /* AvatarDownloadStatusViewModel.h */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC5958282288D0BA754B5CDB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BC5953EF3A2B7DDC93DBF64F /* AvatarCell.h */,
+				BC5950ECBEB3CC3D7BA43998 /* AvatarCell.m */,
+				BC5953E1BE3C12AFD9C21A02 /* AvatarCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BC595A0F2E61D90B91D9D0F7 /* NetworkScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BC59581238757B15657EFC0F /* NetworkScreenProtocols.h */,
+				BC595918DD34F171112544D9 /* NetworkScreenPresenter.h */,
+				BC5953CA80F1B0D89A6812E1 /* NetworkScreenPresenter.m */,
+				BC595A25B0651DDA25E48015 /* View */,
+			);
+			path = NetworkScreen;
+			sourceTree = "<group>";
+		};
+		BC595A25B0651DDA25E48015 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC5953EFD2433A985DA25E41 /* Cell */,
+				BC595424863BE2A7A529BAA5 /* ViewModel */,
+				BC5959416E16CCD45F1C3F97 /* NetworkScreenViewController.h */,
+				BC5950DF52155F56E903AD4C /* NetworkScreenViewController.m */,
+				BC5958E65781DDA5A3F7F0FE /* NetworkScreenViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC595A305586097C5FA6649A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BC595A7718DCBD5620C850FA /* UIColor+Utilities.m */,
+				BC595519CCF05212D819D626 /* UIColor+Utilities.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		BC595A7EF5EBCA1279A61CDC /* AvatarsListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BC59585BF8F84A39F5624247 /* AvatarsListProtocols.h */,
+				BC595BDD8457A72E968D29D2 /* AvatarsListRouter.h */,
+				BC5954B3C5F5BD52BB99FCCA /* AvatarsListRouter.m */,
+				BC5950F1D18D182C8E112AE8 /* Presenter */,
+				BC59512E4562F44937E55364 /* View */,
+			);
+			path = AvatarsListScreen;
+			sourceTree = "<group>";
+		};
+		BC595D7F00E43BE5CF94CD95 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BC595A7EF5EBCA1279A61CDC /* AvatarsListScreen */,
+				BC595A0F2E61D90B91D9D0F7 /* NetworkScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D69C9191F29206700C26D81 /* Adoravatars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D69C93F1F29206800C26D81 /* Build configuration list for PBXNativeTarget "Adoravatars" */;
+			buildPhases = (
+				43DDE19A38C9C0DF436555B7 /* [CP] Check Pods Manifest.lock */,
+				5D69C9161F29206700C26D81 /* Sources */,
+				5D69C9171F29206700C26D81 /* Frameworks */,
+				5D69C9181F29206700C26D81 /* Resources */,
+				4B56FF4FE661FECE159EC63E /* [CP] Embed Pods Frameworks */,
+				5B7E2D5731715195790B1B97 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Adoravatars;
+			productName = Adoravatars;
+			productReference = 5D69C91A1F29206700C26D81 /* Adoravatars.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D69C9351F29206700C26D81 /* AdoravatarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D69C9421F29206800C26D81 /* Build configuration list for PBXNativeTarget "AdoravatarsTests" */;
+			buildPhases = (
+				6EDD9D7AA12069A006239AB8 /* [CP] Check Pods Manifest.lock */,
+				5D69C9321F29206700C26D81 /* Sources */,
+				5D69C9331F29206700C26D81 /* Frameworks */,
+				5D69C9341F29206700C26D81 /* Resources */,
+				4C85A177106C2538298E9F9F /* [CP] Embed Pods Frameworks */,
+				CC2097630A002E38D086D389 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D69C9381F29206700C26D81 /* PBXTargetDependency */,
+			);
+			name = AdoravatarsTests;
+			productName = AdoravatarsTests;
+			productReference = 5D69C9361F29206700C26D81 /* AdoravatarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D69C9121F29206700C26D81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Pawel Maczewski";
+				TargetAttributes = {
+					5D69C9191F29206700C26D81 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 833347VF5D;
+						ProvisioningStyle = Automatic;
+					};
+					5D69C9351F29206700C26D81 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 833347VF5D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5D69C9191F29206700C26D81;
+					};
+				};
+			};
+			buildConfigurationList = 5D69C9151F29206700C26D81 /* Build configuration list for PBXProject "Adoravatars" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D69C9111F29206700C26D81;
+			productRefGroup = 5D69C91B1F29206700C26D81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D69C9191F29206700C26D81 /* Adoravatars */,
+				5D69C9351F29206700C26D81 /* AdoravatarsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D69C9181F29206700C26D81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D69C9301F29206700C26D81 /* LaunchScreen.storyboard in Resources */,
+				5D69C92D1F29206700C26D81 /* Assets.xcassets in Resources */,
+				BC595E902B23FB5417930162 /* AvatarsListViewController.xib in Resources */,
+				BC5959FBAB12BCC23EAA863D /* DownloadStatusCell.xib in Resources */,
+				BC595F230890B1DE5E7CAA4D /* NetworkScreenViewController.xib in Resources */,
+				BC5953EC7BF68FB8D64E1283 /* AvatarCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D69C9341F29206700C26D81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43DDE19A38C9C0DF436555B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4B56FF4FE661FECE159EC63E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Adoravatars/Pods-Adoravatars-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C85A177106C2538298E9F9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdoravatarsTests/Pods-AdoravatarsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B7E2D5731715195790B1B97 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Adoravatars/Pods-Adoravatars-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EDD9D7AA12069A006239AB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CC2097630A002E38D086D389 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdoravatarsTests/Pods-AdoravatarsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D69C9161F29206700C26D81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D69C9221F29206700C26D81 /* AppDelegate.m in Sources */,
+				5D69C9911F2B272400C26D81 /* AvatarDownloadModel.m in Sources */,
+				5D69C91F1F29206700C26D81 /* main.m in Sources */,
+				BC595AA2B739CD6A2DF65679 /* AvatarsListRouter.m in Sources */,
+				BC595374D76E0032A867456B /* NetworkScreenPresenter.m in Sources */,
+				BC595028B5420B658F294A66 /* UIColor+Utilities.m in Sources */,
+				BC595CEEE7E17D6C6F24B443 /* AvatarsListPresenter.m in Sources */,
+				BC5955E79B6311ED65628122 /* AvatarsListViewController.m in Sources */,
+				BC59534DCBBB9BC57E42E762 /* AvatarsListInteractor.m in Sources */,
+				BC59570D8A1390495CEEE951 /* DownloadStatusCell.m in Sources */,
+				BC5958B63349E3B76CC7FB75 /* AvatarDownloadStatusViewModel.m in Sources */,
+				BC5955754A7863D4ADCED77F /* NetworkScreenViewController.m in Sources */,
+				BC59591B8FF79324E9A8FF83 /* AvatarCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D69C9321F29206700C26D81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC5959C7AA706BEBE4E8B4A6 /* AvatarsListInteractor.m in Sources */,
+				5DB379291F3B060000EBEA95 /* AvatarsListInteractorSpec.m in Sources */,
+				BC595D95560C7EE025E4330B /* AvatarDownloadModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D69C9381F29206700C26D81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D69C9191F29206700C26D81 /* Adoravatars */;
+			targetProxy = 5D69C9371F29206700C26D81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D69C92E1F29206700C26D81 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D69C92F1F29206700C26D81 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D69C93D1F29206800C26D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5D69C93E1F29206800C26D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D69C9401F29206800C26D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6C5F02DC5BC133A853F4A63 /* Pods-Adoravatars.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 833347VF5D;
+				INFOPLIST_FILE = Adoravatars/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.owlcoding.Adoravatars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5D69C9411F29206800C26D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCC73AC4EE8D0017F60ECF57 /* Pods-Adoravatars.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 833347VF5D;
+				INFOPLIST_FILE = Adoravatars/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.owlcoding.Adoravatars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5D69C9431F29206800C26D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E326AC28BCE4F63F24D5790E /* Pods-AdoravatarsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 833347VF5D;
+				INFOPLIST_FILE = AdoravatarsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.owlcoding.AdoravatarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Adoravatars.app/Adoravatars";
+			};
+			name = Debug;
+		};
+		5D69C9441F29206800C26D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9895B4A82D077B2D83205C41 /* Pods-AdoravatarsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 833347VF5D;
+				INFOPLIST_FILE = AdoravatarsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.owlcoding.AdoravatarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Adoravatars.app/Adoravatars";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D69C9151F29206700C26D81 /* Build configuration list for PBXProject "Adoravatars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D69C93D1F29206800C26D81 /* Debug */,
+				5D69C93E1F29206800C26D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D69C93F1F29206800C26D81 /* Build configuration list for PBXNativeTarget "Adoravatars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D69C9401F29206800C26D81 /* Debug */,
+				5D69C9411F29206800C26D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D69C9421F29206800C26D81 /* Build configuration list for PBXNativeTarget "AdoravatarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D69C9431F29206800C26D81 /* Debug */,
+				5D69C9441F29206800C26D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D69C9121F29206700C26D81 /* Project object */;
+}
